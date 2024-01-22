@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockeys</title>
+
+    <!-- Tailwind & daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --dark-1: #131318;
+            --dark-2: rgba(19, 19, 24, 0.60);
+            --dark-3: #424247;
+            --semi-white: rgba(255, 255, 255, 0.60);
+            --orange: #FF4240;
+        }
+
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="mx-auto sm:max-w-[640px] lg:max-w-[1210px]">
+        <!-- navbar -->
+        <nav class="mx-5 h-20 lg:h-36 font-manrope flex items-center justify-between">
+
+            <!-- hamburger & nav logo -->
+            <div class="flex items-center">
+                <!-- hamburger -->
+                <div class="dropdown dropdown-bottom lg:hidden">
+                    <div tabindex="0" role="button" class="btn bg-white shadow-none p-0 mr-4 border-none">
+                        <img src="Images/hamburger.svg" alt="">
+                    </div>
+                    <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                        <li><a class="flex justify-between"><p>Search</p><img src="Images/search.svg" alt=""></a></li>
+                    </ul>
+                </div>
+                <!-- nav logo -->
+                <h1 class="text-2xl lg:text-4xl font-extrabold text-[--dark-1]">Hockey<span class="text-[--orange]">’</span>s</h1>
+            </div>
+
+            <!-- nav list -->
+            <ul class="hidden lg:flex gap-11">
+                <li><a class="text-base text-[--orange] font-bold" href="#">Home</a></li>
+                <li><a class="text-base text-[--dark-3] font-normal" href="#">About</a></li>
+                <li><a class="text-base text-[--dark-3] font-normal" href="#">Pages</a></li>
+                <li><a class="text-base text-[--dark-3] font-normal" href="#">Blog</a></li>
+                <li><a class="text-base text-[--dark-3] font-normal" href="#">Contact</a></li>
+            </ul>
+
+            <!-- search icon & button -->
+            <div class="flex gap-6">
+                <img class="hidden lg:block" src="Images/search.svg" alt="">
+                <button class="text-lg py-2 px-4 lg:text-xl font-bold text-white lg:py-4 lg:px-6 rounded-lg bg-[--orange]">Get Ticket</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
